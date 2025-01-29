@@ -20,7 +20,7 @@ CMD ["nginx", "-g", "daemon off;"]
 
 Set for API_URL in React
 
-``
+```js
 const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
 fetch(`${API_URL}/api/data`)
