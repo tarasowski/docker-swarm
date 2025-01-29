@@ -64,11 +64,10 @@ docker node ls
 
 ---
 
-**IMPORTANT:** You need to create a local docker registry on a manager node [create local repository](https://github.com/tarasowski/docker-swarm/blob/main/Docker%2BRegistry.md)
-
-
 ## **3. Create a `docker-compose.yml` for Swarm**
 Create a `docker-compose.yml` file for your stack.
+
+**IMPORTANT:** You need to create a local docker registry on a manager node [create local repository](https://github.com/tarasowski/docker-swarm/blob/main/Docker%2BRegistry.md)
 
 ```yaml
 version: "3.8"
