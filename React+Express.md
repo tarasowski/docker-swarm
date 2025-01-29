@@ -18,6 +18,16 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
+Set for API_URL in React
+
+``
+const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+
+fetch(`${API_URL}/api/data`)
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+```
+
 ---
 
 ### **Express Server (Backend) - `Dockerfile`**
@@ -63,7 +73,6 @@ version: "3.8"
 services:
   frontend:
     image: my-react-app:latest
-    build: ./frontend
     deploy:
       replicas: 3  # Runs 3 instances for fault tolerance
       restart_policy:
@@ -72,10 +81,11 @@ services:
       - app-network
     ports:
       - "80:80"
+     environment:
+      - REACT_APP_API_URL=http://backend:5000  # Swarm Service Discovery
   
   backend:
     image: my-express-server:latest
-    build: ./backend
     deploy:
       replicas: 3  # Runs 3 instances for fault tolerance
       restart_policy:
