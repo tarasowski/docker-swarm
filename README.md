@@ -93,29 +93,19 @@ The swarm manager node constantly monitors the cluster state and reconciles any 
 
 You can specify an overlay network for your services. The swarm manager automatically assigns addresses to the containers on the overlay network when it initializes or updates the application.
 
-Service discovery
+## Service discovery
 
-Swarm manager nodes assign each service in the swarm a unique DNS name and load balance running containers. You can query every container running in the swarm through a DNS server embedded in the swarm.
+Swarm manager nodes assign each service in the swarm a **unique DNS name** and **load balance running containers**. You can **query every container running in the swarm through a DNS server** embedded in the swarm.
 Load balancing
 
-You can expose the ports for services to an external load balancer. Internally, the swarm lets you specify how to distribute service containers between nodes.
-Secure by default
+You can **expose the ports for services to an external load balancer**. Internally, the swarm lets you specify how to distribute service containers between nodes.
 
-Each node in the swarm enforces TLS mutual authentication and encryption to secure communications between itself and all other nodes. You have the option to use self-signed root certificates or certificates from a custom root CA.
-Rolling updates
+## Secure by default
 
-At rollout time you can apply service updates to nodes incrementally. The swarm manager lets you control the delay between service deployment to different sets of nodes. If anything goes wrong, you can roll back to a previous version of the service.
-What's next?
+Each node in the swarm enforces TLS mutual authentication and encryption to **secure communications between itself and all other nodes**. You have the option to use self-signed root certificates or certificates from a custom root CA.
 
-    Learn Swarm mode key concepts.
-    Get started with the Swarm mode tutorial.
-    Explore Swarm mode CLI commands
-        swarm init
-        swarm join
-        service create
-        service inspect
-        service ls
-        service rm
-        service scale
-        service ps
-        service update
+## Rolling updates
+
+At rollout time you can apply service updates to nodes incrementally. The swarm manager lets you control the delay between service deployment to different sets of nodes. **If anything goes wrong, you can roll back to a previous version of the service.**
+
+
