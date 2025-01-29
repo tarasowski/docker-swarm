@@ -211,7 +211,7 @@ If the swarm loses quorum:
 - **Quorum** is the minimum number of manager nodes required to make decisions and maintain the swarm state.
 - It ensures consistency and fault tolerance in Docker Swarm.
 - Always maintain an **odd number of managers** and monitor their health to avoid losing quorum.
-```
+
 
 ---
 
