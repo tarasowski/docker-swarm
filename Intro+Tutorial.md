@@ -114,7 +114,7 @@ Run this on the **manager node**:
 ```sh
 docker service create \
   --name nginx-worker \
-  --constraint 'node.hostname == xxxx' \
+  --constraint 'node.role == worker' \
   --publish 8080:80 \
   nginx
 ```
