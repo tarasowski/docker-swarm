@@ -290,3 +290,7 @@ If the swarm loses quorum:
 - Use static IPs for manager nodes.
 - Regularly back up the swarm state.
 - Avoid scaling down to a single manager.
+
+# Getting Started With Swarm Mode
+
+[Tutorial](https://docs.docker.com/engine/swarm/swarm-tutorial/)
