@@ -154,5 +154,3 @@ This setup ensures:
 ✅ Nginx runs **only** on the worker node.  
 ✅ The **Visualizer** runs **only** on the manager node.  
 ✅ You can monitor the swarm with **Visualizer**.
-
-Would you like to add auto-scaling or persistent storage to this setup? 🚀
