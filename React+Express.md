@@ -105,6 +105,7 @@ networks:
 ```
 
 This configuration:
+
 ✅ **Replicates** frontend & backend (3 instances each)  
 ✅ **Automatically restarts** failed containers  
 ✅ **Uses Swarm’s built-in load balancing**  
