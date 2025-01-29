@@ -64,6 +64,9 @@ docker node ls
 
 ---
 
+**IMPORTANT:** You need to create a local docker registry on a manager node [create local repository](https://github.com/tarasowski/docker-swarm/blob/main/Docker%2BRegistry.md)
+
+
 ## **3. Create a `docker-compose.yml` for Swarm**
 Create a `docker-compose.yml` file for your stack.
 
@@ -72,7 +75,7 @@ version: "3.8"
 
 services:
   frontend:
-    image: my-react-app:latest
+    image: manager-ip:5000/my-react-app:latest
     deploy:
       replicas: 3  # Runs 3 instances for fault tolerance
       restart_policy:
@@ -85,7 +88,7 @@ services:
       - REACT_APP_API_URL=http://backend:5000  # Swarm Service Discovery
   
   backend:
-    image: my-express-server:latest
+    image: manager-ip:5000/my-express-server:latest
     deploy:
       replicas: 3  # Runs 3 instances for fault tolerance
       restart_policy:
