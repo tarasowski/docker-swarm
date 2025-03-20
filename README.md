@@ -293,7 +293,7 @@ If the swarm loses quorum:
 
 # Getting Started With Swarm Mode
 
-[Tutorial Nginx + Visualizer](https://github.com/tarasowski/docker-swarm/blob/main/Tutorial.md](https://github.com/tarasowski/docker-swarm/blob/main/Intro%2BTutorial.md)
+[Tutorial Nginx + Visualizer](https://github.com/tarasowski/docker-swarm/blob/main/Intro%2BTutorial.md)
 
 [5 Node Cluster Tutorial](https://dockerlabs.collabnix.com/intermediate/workshop/getting-started-with-swarm.html)
 
