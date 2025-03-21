@@ -70,11 +70,8 @@ nc -zv <MANAGER_PRIVATE_IP> 2377 # From Worker to Manager
 ### **1. Install Docker on Both EC2 Instances**
 Run this on **both** the manager and worker nodes:
 
-```sh
-sudo apt update -y && sudo apt install -y docker.io
-sudo systemctl enable --now docker
-sudo usermod -aG docker $USER
-```
+[docker install](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
+
 
 ---
 
